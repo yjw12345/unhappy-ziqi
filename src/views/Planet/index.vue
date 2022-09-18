@@ -1,5 +1,7 @@
 <template>
-  <div id="universe"></div>
+  <div class="universeFather">
+    <div id="universe"></div>
+  </div>
 </template>
 
 <script setup >
@@ -10,7 +12,7 @@ import { onMounted } from "@vue/runtime-core";
 var layerCount = 5;
 var starCount = 400;
 var maxTime = 30;
-const univrse =ref(null)
+const univrse = ref(null);
 // var universe = document.getElementById("universe");
 var w = window;
 var d = document;
@@ -47,11 +49,12 @@ onMounted(() => {
     );
   }
 });
-
 </script>
 
 <style lang='scss' >
-body {
+.universeFather {
+  position: absolute;
+  z-index: -1 ;
   background: #ffa17f;
   background: -webkit-linear-gradient(to right, #00223e, #ffa17f);
   background: linear-gradient(to right, #00223e, #ffa17f);

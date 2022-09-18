@@ -824,6 +824,9 @@
       </g>
     </svg>
   </div>
+  <!-- <div class="Welcome">
+    <router-link to="/home">点击跳转</router-link>
+  </div> -->
 </template>
 
 <script setup lang='ts'>
@@ -848,9 +851,9 @@ onMounted(() => {
   computedTime(TEAM4?.children, TransitionTime);
   setTimeout(() => {
     SVGAll.style.display = "none";
-    SVGLeft.style.display ="block"
-    SVGRight.style.display ="block"
-  }, 5000);
+    SVGLeft.style.display = "block";
+    SVGRight.style.display = "block";
+  }, 5500);
 });
 // 计算时间的方法
 function computedTime(
@@ -870,6 +873,12 @@ function computedTime(
 </script>
 
 <style lang='scss' scoped>
+svg{
+  height: 100vh;
+  width: 100vw;
+}
+.Welcome {
+}
 svg#door1 {
   // 这里是我们写的代码
   .cls-10 {

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Planet from "@/views/Planet/index.vue"
+import Planet from "@/views/Planet/index.vue";
 </script>
 
 <template>
-  <Planet style="float:left"></Planet>
+  <Planet></Planet>
   <router-view> </router-view>
 </template>
 
